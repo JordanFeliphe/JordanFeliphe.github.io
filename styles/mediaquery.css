@@ -173,7 +173,7 @@
   }
   .framefor {
     display: flex;
-    margin-top:50px;
+    margin-top: 50px;
     margin-left: -39px;
     width: 435px;
     height: 298px;
@@ -183,7 +183,7 @@
   }
   .frameslz {
     display: flex;
-    margin-top:30px;
+    margin-top: 30px;
     margin-left: -39px;
     width: 435px;
     height: 297px;
@@ -280,4 +280,3 @@
     }
   }
 }
-
