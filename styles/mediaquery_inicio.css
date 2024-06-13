@@ -594,3 +594,33 @@
     margin-left: 80px;
   }
 }
+@media screen and (max-width: 1020px) {
+  .navegacao,
+  button {
+    display: none;
+  }
+  .container-text {
+    flex-direction: column-reverse;
+  }
+  img {
+    margin-top: -90px;
+    height: 210px;
+  }
+  header img {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: auto;
+  }
+  h1 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  p {
+    margin-right: 250px;
+    text-align: justify;
+    width: 100%;
+    font-size: 14px;
+    max-width: 300px;
+  }
+}
