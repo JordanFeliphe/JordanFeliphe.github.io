@@ -1,215 +1,309 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSF Digital - Soluções de impressão</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./src/js/scripts.js">
+    <link rel="icon" type="image/png" href="./src/img/2c6f69bdf78de3fd1f47fe4231280559-_1_.ico">
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSF Digital - Soluções de impressão e documentos digitais</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/navico.ico">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/container_text.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="/styles/section2.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/styles/loading.css">
-    <link rel="stylesheet" href="/styles/section3.css">
-    <link rel="stylesheet" href="styles/section4.css">
-    <link rel="stylesheet" href="styles/section5.css">
-    <link rel="stylesheet" href="styles/mediaquery_inicio.css">
+  <body>
+    <div class="spinner-wrapper">
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+    </div>
+   <img  class="bg-img"    src="./src/img/3d-digital-landscape-background-with-flowing-grid-with-shallow-focus.webp" alt="bg-img"> 
+    <nav class="navbar navbar-expand-lg  col-12 ">
+      <div class="container">
+        <!-- Imagem alinhada à esquerda -->
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./src/img/logo_black.webp"
+            class="img-fluid"
+            alt="csf"
+            width="150px"
+            height="100px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Itens de navegação alinhados à direita -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html"
+                >Home</a
+              > 
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              > 
+                Serviços
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./vendaselocacoes.html"
+                    >Vendas e Locações</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Assistência técnica</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Processo de GED</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Gerenciamento Impressão e cópia</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Impressão com variáveis</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Divisão gráfica (Serviços internos)</a
+                  >
+                </li>
+              </ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                > 
+                  Intranet
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="https://www.csfdigital.com.br/hesk/" target="_blank"
+                      >Hesk</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="http://ws.csfdigital.corp:9292/Account/Login.aspx?ReturnUrl=%2f" target="_blank">PPS (Interno)</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="http://177.19.130.212:9292/Account/Login.aspx?ReturnUrl=%2" target="_blank">PPS (Externo)</a>
+                  </li>
+                  <li><a class="dropdown-item" href="http://db02.csfdigital.corp:8484/reports/browse/" target="_blank">Report(Interno)</a></li>
+                  <li><a class="dropdown-item" href="http://177.19.130.212:8484/reports/browse/" target="_blank">Report(Externo)</a></li>
+                </ul>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://psfx.com.br/pws/index.php/pws"
+                target="_blank"
+                >Portal do Cliente</a
+              >
+            </li>
+           
+
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-danger">
+                Contratar serviços
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     
-</head>
-
-<body>
-    <div id="loading"> </div>
-    <main class="container">
-        <section class="section1">
-            <div class="background">
-                <video loop autoplay muted>
-                    <source src="./assets/images/Coverr-The-Sensory-Screen-On-The-Printer-Machine-4383-1080P.mp4"
-                        type="video/mp4">
-                </video>
+    <header class="container mt-3" >
+      <div class="row">
+        <div class="col-12 col-lg-6 order-lg-2">
+          <img
+            src="./src/img/Globalization-bro-_1_.webp"
+            class="img-fluid"
+            alt="CSF Digital"
+          />
+        </div>
+        <div class="col-12 col-lg-6 order-lg-1 ml-5">
+          <div class="mt-personalizada">
+            <h1 class="text-center text-md-start">
+              Nós somos a <b><span class="text">CSF Digital</span></b>
+            </h1>
+          </div>
+          <p class="lead text-muted text-md-start text-justify col-12">
+            Líder em Soluções de Impressão e Documentos Digitais, abrangendo
+            tanto o mercado corporativo como governamental. Estamos presentes
+            com técnicos residentes em todos os estados do Nordeste do Brasil,
+            com contrato amplo de outsourcing no setor Bancário, sendo um dos
+            maiores players deste segmento.
+          </p>
+          <div class="mt-4 text-center text-md-start mt-personalizada_bottom">
+            <button type="button" class="btn btn-danger btn-lg">
+              Contratar
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg" >
+              Conheça nossos clientes
+            </button>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+      </div>
+    </header>
+    <section id="about" class="about-section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="about-img">
+              <img src="" alt="" class="img-fluid">
             </div>
-            <div class="cabecalho" data-aos="fade-right" data-aos-duration="2000">
-                <header>
-                    <img src="assets/images/logo_black.webp" hre alt="logocsf">
 
+          </div>
+        </div>
+      </div>
 
-                    <ul class="navegacao" data-aos="fade-right" data-aos-duration="2000">
-                        <li>
-                            <a href="#Sobre" onclick="scrollToMiddle('Sobre')" class="navegacao-link">Sobre</a>
-                        </li>
-                        <li>
-                            <a href="#Solucoes" onclick="scrollToMiddle('Solucoes')" class="navegacao-link">Soluções</a>
-                        </li>
-                        <li>
-                            <a href="#Gestao" onclick="scrollToMiddle('Gestao')" class="navegacao-link">Gestão</a>
-                        </li>
-                        <li>
-                            <a href="contato.html" class="navegacao-link">Contato</a>
-                        </li>
-                        <li>
-                            <a href="https://psfx.com.br/pws/index.php/pws" target="_blank"
-                                class="navegacao-link">Portal do cliente</a>
-                        </li>
-                        <a href="https://wa.me/5598991938283?text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site%21" target="_blank" class="button-link">
-                            <button class="button">
-                                <span class="button-content">Contratar</span>
-                            </button>
-                        </a>
-                    </ul>
-                </header>
-                <div class="container-text">
-                    <div class="text">
-                        <h1 data-aos="fade-up" data-aos-duration="2000">Nós somos a <span class="empresa"> <b> CSF
-                                    Digital</b> </span></h1>
-                        <p data-aos="fade-up" data-aos-duration="2000"> Imagine uma realidade onde cada relatório é uma
-                            obra de arte,
-                            cada apresentação é uma obra-prima e cada documento é uma declaração de excelência. Com a
-                            nossa equipe dedicada ao seu lado,
-                            essa realidade se torna possível. Estamos aqui para não apenas atender às suas expectativas,
-                            mas para superá-las a cada impressão.
-                        </p>
-                    </div>
-                    <div class="imagem" data-aos="fade-up" data-aos-duration="2000" >
-                        <img src="assets/images/robo.webp"alt="fotorobo">
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <section class="section2" id="Sobre">
-            <img class="printed" src="assets/images/Impressao.webp" alt="fotoimpre">
-            <div class="text">
-                <h1 data-aos="fade-up" data-aos-duration="2000"> <span class="Focada">Focada em
-                        excelentes impressões
-                </h1>
-                <div class="text2" data-aos="fade-up" data-aos-duration="2000">
-                    <P>Líder em soluções de impressão e documentos digitais, atendemos tanto o mercado corporativo
-                        quanto o governamental com uma presença robusta em todos os estados do Nordeste do Brasil, onde
-                        nossos técnicos residentes garantem suporte local eficiente. Nosso abrangente contrato de
-                        outsourcing no setor bancário nos posiciona como um dos maiores players deste segmento,
-                        destacando nossa capacidade de atender grandes demandas com excelência. Trabalhamos com
-                        representantes autorizados das marcas Kyocera, Samsung e Xerox, o que assegura a qualidade e a
-                        confiabilidade de nossos serviços. Nossa expertise abrange desde a implementação de tecnologias
-                        avançadas até a manutenção contínua dos equipamentos, sempre com foco na otimização de recursos
-                        e na segurança dos dados. Com uma abordagem personalizada, adaptamos nossas soluções às
-                        necessidades específicas de cada cliente, oferecendo flexibilidade e escalabilidade para
-                        acompanhar o crescimento de suas operações.</P>
-                </div>
+    </section>
+    
+
+    <footer class="footer" >
+      <div class="container-footer">
+        <div class="row">
+          <div class="footer-col"> 
+            <h4>CSF Digital - São Luís</h4>
+            <ul>
+              <li><a href="mailto:comercial@csfdigital.com.br"><i class="fa-solid fa-envelope"></i>comercial@csfdigital.com.br</a></li>
+              <li><a href="#"><i class="fa-solid fa-phone"></i>(98) 3301-2400</a></li>
+              <li><a href="#"><i class="fa-solid fa-clock"></i>08:00 às 12:30 | 13:30 às 18:00</a></li>
+              <li><a href="https://maps.app.goo.gl/wSM857DbcmVR6btE9" target="_blank"><i class="fa-solid fa-location-dot"></i>Av. dos Holandeses, Qda. 32, Nº 1, Ed. Praia Shopping | Loja 12, pavimento superior, - Calhau, São Luís-MA, Cep: 65071-380</a></li>
+            </ul>
+          </div>
+          <div class="footer-col"> 
+            <h4>CSF Digital - Fortaleza</h4>
+            <ul>
+              <li><a href="mailto:comercial@csfdigital.com.br"><i class="fa-solid fa-envelope"></i>comercial@csfdigital.com.br</a></li>
+              <li><a href="#"><i class="fa-solid fa-phone"></i>(85) 3022-0900</a></li>
+              <li><a href="#"><i class="fa-solid fa-clock"></i>08:00 às 12:30 | 13:30 às 18:00</a></li>
+              <li><a href="https://maps.app.goo.gl/uNtnCF7mnA9jyPDcA" target="_blank"><i class="fa-solid fa-location-dot"></i>Rua Raimundo Oliveira Filho, Nº 332 - Papicu, Fortaleza-CE. CEP: 60175-175</a></li>
+            </ul>
+          </div>
+          <div class="footer-col"> 
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Portal do cliente</a></li>
+              
+            </ul>
+          </div>
+          <div class="footer-col"> 
+            <h4>Redes sociais</h4>
+            <div class="social-links">
+              <a href="https://pt-br.facebook.com/csfdigital/" target="_blank"><i class="fa-brands fa-facebook" id="social-icons"></i></a>
+              <a href="https://www.instagram.com/csfdigital/" target="_blank"><i class="fa-brands fa-instagram"id="social-icons"></i></a>
+              <a href="https://br.linkedin.com/company/csfdigital"target="_blank"><i class="fa-brands fa-linkedin"id="social-icons"></i></a>
 
             </div>
-            <div class="cards-container" data-aos="fade-up" data-aos-duration="2000">
-                <div class="card">
-                    <img src="assets/images/kyocera.webp" alt="Kyocera">
-                </div>
-                <div class="card">
-                    <img src="assets/images/samsung.webp" alt="Samsung">
-                </div>
-                <div class="card">
-                    <img src="assets/images/xerox.webp" alt="Xerox">
-                </div>
-            </div>
-        </section>
+           
+          </div>
 
-        <section class="section3" id="Solucoes">
-            <video loop autoplay muted>
-                <source src="./assets/images/4737-179738682-small.mp4" type="video/mp4">
-            </video>
-            <div class="text3" data-aos="fade-up" data-aos-duration="2000">
-                <h1>Nossas Soluções</h1>
-                <p class="p-section3" data-aos="fade-up" data-aos-duration="2000">
-                    Nossas soluções de outsourcing de impressão transformam sua gestão documental, reduzindo custos e
-                    aumentando a eficiência. Com tecnologia de ponta, fornecemos equipamentos modernos e manutenção
-                    contínua, garantindo alta qualidade e minimização de inatividade. Nosso compromisso com a
-                    sustentabilidade reduz o consumo de recursos, enquanto sistemas avançados de segurança protegem seus
-                    dados. Personalizamos nossos serviços para atender às suas necessidades específicas, oferecendo
-                    flexibilidade e escalabilidade para acompanhar o crescimento da sua empresa. Além disso, realizamos
-                    uma análise detalhada das suas necessidades de impressão, implementando estratégias que aumentam a
-                    produtividade e otimizam o uso de materiais. Oferecemos suporte técnico especializado e soluções
-                    digitais, como gestão de documentos em nuvem, para melhorar o acesso e o compartilhamento de
-                    informações.</p>
-                <div class="container-section3"></div>
-                <div class="card-container3" data-aos="fade-right" data-aos-duration="2000">
-                    <div class="card-section3">
-                        <i class="bi bi-cart"></i>
-                        <div class="card__content">
-                            <p class="card__title">Vendas e Locações</p>
-                            <p class="card__description">Equipamentos de pequeno, médio e grande porte, preto & branco e
-                                coloridos, com tecnologias Laser e Cera Sólida.</p>
-                        </div>
-                    </div>
-                    <div class="card-section3">
-                        <i class="bi bi-tools"></i>
-                        <div class="card__content">
-                            <p class="card__title">Assistência técnica</p>
-                            <p class="card__description">Atuamos com técnicos treinados e certificados diretamente pelos
-                                fabricantes.</p>
-                        </div>
-                    </div>
-                    <div class="card-section3">
-                        <i class="bi bi-laptop"></i>
-                        <div class="card__content">
-                            <p class="card__title">Processo de GED</p>
-                            <p class="card__description">Gestão Eletrônica de Documentos. Tratamento e arquivamento
-                                digital para documentos.</p>
-                        </div>
-                    </div>
-                    <div class="card-section3">
-                        <i class="bi bi-printer"></i>
-                        <div class="card__content">
-                            <p class="card__title">Impressão</p>
-                            <p class="card__description">Impressão de Contracheques, cobranças, boletos bancários,
-                                material de marketing personalizado.</p>
-                        </div>
-                    </div>
-                </div>
-        </section>>
+        </div>
+      </div>
 
-        <section class="section4" id="Gestao">
-            <img class="printed4" src="assets/images/papel.webp" alt="">
-            <div class="section4-container">
-                <h1 class="Titulo" data-aos="fade-up" data-aos-duration="2000">Excelência em Gestão Documental</h1>
-                <p class="paragrafo" data-aos="fade-up" data-aos-duration="2000">Nós temos o que você precisa: excelência em soluções e serviços na área de produção e armazenagem de
-                    documentos. Com mais de 28 mil serviços realizados, mais de 50 clientes satisfeitos e mais de 33
-                    parceiros confiáveis, nossa expertise e dedicação à qualidade nos permitem oferecer soluções
-                    personalizadas e inovadoras que atendem às necessidades específicas de cada cliente, garantindo uma
-                    gestão documental eficiente e organizada. Nossos serviços são desenvolvidos para serem atrativos e
-                    viáveis, proporcionando um retorno positivo sobre o investimento ao otimizar processos, reduzir
-                    custos e maximizar a produtividade. Com um enfoque centrado no cliente, asseguramos que cada projeto
-                    seja executado com precisão e cuidado, resultando em uma experiência satisfatória e em benefícios
-                    tangíveis para sua empresa. Investir em nossos serviços é garantir tranquilidade e eficiência,
-                    permitindo que você se concentre nas atividades essenciais do seu negócio enquanto nós cuidamos da
-                    gestão dos seus documentos com excelência.</p>
-                <div class="container-card" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="container4">
-                        <div class="card_box4">
-                            <span>
-                                <h1>28K+</h1>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="container5">
-                        <div class="card_box5">
-                            <span>
-                                <h1>50+</h1>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="container6">
-                        <div class="card_box6">
-                            <span>
-                                <h1>33K+</h1>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+      <article onclick="backTop();">
+        <button class="scrollTop">
+        <img src="./src/img/seta-para-cima.png" alt="">
+      </button>
+  
+      </article>
+      <hr>
+      <div class="text-center mt-5" id="copyright">
+        <p>&copy; Copyright 2024 <a href="./index.html">CSF Digital.</a>Todos Os Direitos Reservados. Powered by Jordan Feliphe.</p>
+      </div>
+    </footer>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.addEventListener('scroll',function(){
+        let scroll=document.querySelector('.scrollTop')
+          scroll.classList.toggle('active',window.scrollY>450)
+      })
+      function backTop(){
 
-                </div>
-            </section>
-        </main>
-    </body>
-    <script src="js/scripts.js"></script>
+        window.scrollTo({
+          top:0,
+          behavior:'smooth'
+        })
+      }
+    </script>
+    <script>
+      const spinnerWrapperEl = document.querySelector(".spinner-wrapper");
+     window.addEventListener('load',() => {
+      spinnerWrapperEl.style.opacity = '0';
+      setTimeout(()=>{
+        spinnerWrapperEl.style.display = 'none'
+      },200);
+     });
+      
+     
+
+    </script>
+  </body>
 </html>
